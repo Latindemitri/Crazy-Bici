@@ -21,6 +21,15 @@ a.nav-link:hover {
     transition: ease-out 0.6s;
     font-size: 1.5rem;
 }
+.centro {
+    padding: 1rem;
+    border: solid #FFC300 1rem;
+    font-style: italic;
+    color: #0f0f0f;
+}
+h4 {
+    text-align: center;
+}
 .warning {
     background-color: #FFC300;
     text-align: center;
@@ -52,10 +61,7 @@ div.container-fluid{
 .logofooter {
     margin: 12px 12px;
 }
-.dir {
-    margin: 0 20px;
-    font-weight: bold;
-}
+
 .social {
     
     width: 2rem;
@@ -99,12 +105,161 @@ a {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 .alcaldia {
     width: 15rem;
 }
+/*Pagina Nosotros */
+.noso {
+    background-color: #FFC300;
+    text-align: center;
 
+    
+}
+.foto {
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 2rem;
+}
+.ti {
+    padding: 2rem;
+}
+.nuestro {
+    margin: auto 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-style: italic;
+}
+/*Pagina Renta*/
+.container {
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.caja {
+    border: solid 2px #FFC300;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.rent {
+    width: 70%;
+    
+}
+.descripcion {
+    border-radius: 10px;
+    display: grid;
+    gap: 2rem;
+    font-style: italic;
+}
+.imagenes {
+    display: grid;
+    gap: 2rem;
+}
+.des {
+    background-color: #FFC300;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    align-self:baseline ;    
+}
+@media (max-width: 560px) {
+    .rent { 
+        width: 15rem; 
+        border-radius: 10px;
+    } 
+    .imagenes {
+        gap: 1rem;
+    }
+    .descripcion {
+        position: absolute;
+        margin-top: 12rem;
+        gap: 9.5rem;
+        align-self:stretch;
+        font-size: 11px;
+    }
+    .d2 {
+        margin-top: 4rem; 
+    }
+    .d3 {
+        margin-top: 4rem;
+    }
+    .d4 {
+        margin-top: 6.5rem;
+        margin-bottom: 2rem;
+    }
+    .caja {
+        margin-bottom: 4rem;
+        
+    }
+}
+/*Pagina de Contacto*/
+h3{
+    text-align: center;
+}
+.contacto {
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+    font-style: italic;
+}
+iframe {
+    border: solid 2px #FFC300;
+}
+.field {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    
+}
+.loc {
+    background-color: #FFC300;
+    padding: 1rem;
+    border-radius: 100%;
+}
 
+.form {
+    border: solid 0.5px;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    width: 20rem;
+    justify-content: center;
+    margin: auto; 
+    background-color: #CFD8DC;
+}
+h3 {
+    font-style: italic;
+}
+.control {
+    font-style: italic;
+    background-color: white;
+}
+.area {
+    font-style: italic;
+    background-color: white;
+}
+.boton {
+    background-color: #ffc40046;
+    font-weight: bold;
+    
+}
+.boton:hover {
+    box-shadow: inset 1440px 0 0 0 #FFC300;
+    transition: ease-out 0.6s;
+    
+}
+@media (max-width: 560px) {
+    .contacto {
+        display:flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
 
+    }
 
+}
